@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="autor" content="David Matijanić">
+    <meta name="opis" content="Stranica koja služi kako bi se kontaktirao hotel">
+    <meta name="kljucneRijeci" content="kontakt, obrazac, hotel">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/dmatijani21.css">
+    <link rel="stylesheet" href="../css/dmatijani21_responzivni_dizajn.css">
+    <script type="text/javascript" src="../js/dmatijani21.js"></script>
+
+    <title>Kontakt</title>
+</head>
+
+<body>
+    <header>
+        <img src="../dokumenti/slike/pocetnaBanner.jpg" alt="Banner slika" class="maxSirina" height="360">
+    
+        <h1>HOTEL ZLATNI OTOK</h1>
+
+        <a href="../index.html">
+            <img id="headerLogo" src="../dokumenti/slike/logo1.png" alt="Logo Hotela Zlatni Otok" width="256">
+        </a>
+    </header>
+
+    <nav>
+        <div id="izbornikMaliZaslon">Izbornik</div>
+
+        <ul>
+            <li><a href="../index.html">Početna</a></li>
+            <li><a href="rezervacija.html">Rezervacija</a></li>
+            <li><a class="active" href="kontakt.html">Kontakt</a></li>
+            <li><a href="lokacija.html">Lokacija</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li style="float:right"><a href="../dokumentacija/autor.html">Autor</a></li>
+            <li style="float:right"><a href="../dokumentacija/dokumentacija.html">Dokumentacija</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>
+                Na sljedećoj stranici možete kontaktirati hotel.
+            </p>
+
+            <div id="kontaktObrazac">
+                <form method="POST" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" novalidate>
+                    <div id="kontaktPoruka" class="obrazacPoruka">Je li ovo prazna poruka?</div> <!--Poruka se generira u JavaScriptu -->
+
+                    <input type="text" id="kontaktObrazacPredmet" name="predmet" maxlength="30" placeholder="Predmet poruke" required>
+                    <br>
+                    <input type="radio" id="kontaktObrazacVrsta1" name="vrsta_upita" value="1" required checked>Općenito<br>
+                    <input type="radio" id="kontaktObrazacVrsta2" name="vrsta_upita" value="2">Smještaj i osobe<br>
+                    <input type="radio" id="kontaktObrazacVrsta3" name="vrsta_upita" value="3">Posebne ponude<br>
+                    <input type="radio" id="kontaktObrazacVrsta4" name="vrsta_upita" value="4">Zabava<br>
+                    <input type="radio" id="kontaktObrazacVrsta5" name="vrsta_upita" value="5">Ostalo<br>
+                    <textarea id="kontaktObrazacPoruka" name="poruka" cols="40" rows="10" maxlength="1000" required placeholder="Ovdje unesite tijelo poruke"></textarea>
+                    <br>
+                    <input type="submit" value="Pošalji podatke">
+                    <br>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023. David Matijanić
+        <br>
+
+        <a id="licenca" href="https://creativecommons.org/licenses/by/4.0/legalcode">
+            <img src="../dokumenti/slike/cc_by.png" alt="Licenca za imenovanje - CC-BY">
+        </a>
+
+        <a id="licenca2" href="http://validator.w3.org/check?uri=https://spider.foi.hr/OWT/2023/zadaca_02/dmatijani21/ostalo/kontakt.html">
+            <img src="../dokumenti/slike/HTML5.png" alt="Znak HTML5 koji služi kao poveznica na Validator" width="80">
+        </a>
+    </footer>
+</body>
+
+</html>

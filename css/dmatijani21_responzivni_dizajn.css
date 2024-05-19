@@ -1,0 +1,353 @@
+/*
+MALI ZASLON: manje od 480px
+SREDNJI ZASLON: 480px do 1024px
+VELIKI ZASLON: preko 1024px
+*/
+
+@media (max-width: 480px) { /* Mali zaslon */
+    /* GLAVNO */
+
+    main {
+        border-left: 0px;
+        border-right: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+        align-items: center;
+    }
+
+    main div[id="dokumentacija"],
+    main section[id="oAutoru"],
+    main section[id="dodatniPodaci"] {
+        align-items: stretch;
+        text-align: left;
+        padding: 10px;
+    }
+
+    #headerLogo {
+        width: 160px;
+        max-width: 40%;
+    }
+
+    /* NAVIGACIJA */
+
+    nav #izbornikMaliZaslon {
+        height: 100%;
+        padding: 14px 16px;
+    }
+
+    nav #izbornikMaliZaslon:hover {
+        background-color: #eac659;
+        border-bottom: 3px solid #CC9F1A;
+    }
+
+    nav ul li {
+        width: 20%;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    nav ul li a[href] {
+        padding: 0px;
+        height: 0px;
+    }
+
+    nav:hover>ul li a[href] {
+        padding: 14px 16px;
+        height: 100%;
+    }
+
+    nav ul li[style] {
+        width: 50%;
+    }
+
+    /* TABLICA - CJENIK */
+
+    #tablicaCijena {
+        width: 70%;
+        position: relative;
+        left: 15%;
+    }
+
+    #tablicaCijena>thead>tr>th:not(#tablicaCijena th:first-child),
+    #tablicaCijena>tbody>tr>td:not(#tablicaCijena td:first-child) {
+        display: none;
+    }
+
+    /* OBRAZAC ZA REZERVACIJU */
+
+    #rezervacija {
+        align-items: center;
+        border: 0px;
+        margin: 0px;
+        border-radius: 0px;
+        overflow: hidden;
+    }
+
+    #rezervacija>#rezervacijaObrazac {
+        margin: 0px;
+        border: 0px;
+        border-radius: 0px;
+    }
+
+    #rezervacija>#rezervacijaObrazac>form {
+        display: block;
+        align-items: center;
+    }
+
+    #rezervacija>#rezervacijaObrazac>form>fieldset {
+        max-width: 100%;
+        display: block;
+    }
+
+    #rezervacija>#rezervacijaObrazac>form>fieldset>label {
+        display: block;
+    }
+
+    #rezervacija>#rezervacijaObrazac>form>input {
+        min-width: 100px;
+    }
+
+    #rezervacija>#rezervacijaObrazac>form>fieldset>input:not(input[type="radio"], input[type="checkbox"]) {
+        width: 100%;
+    }
+
+    /* OBRAZAC ZA KONTAKT */
+
+    #kontakt {
+        align-items: center;
+        border: 0px;
+        margin: 0px;
+        border-radius: 0px;
+        overflow: hidden;
+    }
+
+    #kontakt>#kontaktObrazac {
+        padding: 10px;
+        margin: 0px;
+        border: 0px;
+        border-radius: 0px;
+    }
+
+    #kontakt>#kontaktObrazac input[type="text"],
+    #kontakt>#kontaktObrazac textarea {
+        width: 100%;
+    }
+
+    /* GALERIJA */
+
+    #galerija {
+        display: block;
+    }
+
+    #galerija .gridNaslov {
+        border-radius: 0px;
+    }
+
+    #galerija>div:not(.gridNaslov) {
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        border-radius: 0px;
+        margin-top: 10px;
+    }
+
+    #galerija>div:not(.gridNaslov) figure {
+        padding-bottom: 20px;
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    #galerija>div[class="gridSlika1"] img { /* Popravlja slike koje su smanjene */
+        width: 100%;
+    }
+    
+    #galerija>div[class="gridSlika2"] img { /* Popravlja slike koje su smanjene */
+        width: 100%;
+    }
+    
+    #galerija>div[class="gridSlika5"] img { /* Popravlja slike koje su smanjene */
+        width: 100%;
+    }
+
+    .slikaUGaleriji {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .slikaUGaleriji:hover {
+        transform: scale(1);
+    }
+
+    /* OSTALO */
+    #akcijskePonude {
+        margin: 0px;
+        border-radius: 0px;
+        border: 15px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1024px) { /* Srednji zaslon */
+    /* GLAVNO */
+
+    main {
+        border-left: 0px;
+        border-right: 0px;
+        padding: 15px 35px;
+    }
+
+    #headerLogo {
+        width: 240px;
+        max-width: 40%;
+    }
+
+    /* IZBORNIK */
+
+    nav ul {
+        overflow: hidden;
+    }
+
+    nav ul li:not(li[style]) {
+        width: 20%;
+    }
+
+    nav ul li[style] {
+        width: 50%;
+    }
+
+    /* OBRAZAC ZA REZERVACIJU */
+
+    #rezervacija>#rezervacijaObrazac>form {
+        display: grid;
+        grid-template-areas:
+            "f1 f1"
+            "f2 f2"
+            "ts tr";
+        gap: 15px;
+        overflow: hidden;
+    }
+
+    #rezervacija>#rezervacijaObrazac>form>input {
+        min-width: 100px;
+    }
+
+    #rezervacija>#rezervacijaObrazac>form>fieldset {
+        margin: 20px;
+    }
+
+    /* SUPROTNI KONTRAST TEME */
+
+    main {
+        background-color: #222;
+        color: #FFF;
+    }
+    
+    #tablicaCijena>caption+thead {
+        background-color: #CC9F1A;
+        border: 3px solid white;
+        color: #FFF;
+    }
+    
+    #tablicaCijena tbody,th,td {
+        border: 1px solid white;
+    }
+    
+    #tablicaCijena>tbody>tr:nth-child(even) {
+        background-color: #222;
+    }
+
+    #tablicaCijena>tbody>tr:nth-child(odd) {
+        background-color: #383838;
+    }
+    
+    #tablicaCijena>tbody>tr:hover {
+        background-color: #CC9F1A;
+    }
+
+    #lokacija,
+    #tlocrtHotela,
+    #dokumentacija {
+        color: black;
+    }
+
+    nav ul {
+        background-color: #595959;
+    }
+    
+    nav ul li a[href] {
+        color: white;
+    }
+    
+    .active {
+        background-color: #CC9F1A;
+    }
+    
+    nav ul li a:hover:not(.active) {
+        background-color: #CC9F1A;
+    }
+
+    footer {
+        background-color: #595959;
+    }
+
+    #akcijskePonude {
+        background-color: #595959;
+        border: 20px solid #595959;
+    }
+    
+    #akcijskePonude>#tekstUnutarPonuda~div {
+        background-color: #CC9F1A;
+        border: 15px solid #CC9F1A;
+    }
+    
+    #akcijskePonude a>p {
+        color: white;
+    }
+
+    #rezervacija {
+        border: 20px solid #595959;
+        background-color: #595959;
+    }
+
+    #rezervacija>#rezervacijaObrazac {
+        background-color: #CC9F1A;
+        border: 15px solid #CC9F1A;
+    }
+
+    #kontakt {
+        border: 20px solid #595959;
+        background-color: #595959;
+    }
+    
+    #kontakt>#kontaktObrazac {
+        background-color: #CC9F1A;
+        border: 15px solid #CC9F1A;
+    }
+
+    #galerija>div {
+        background-color: #595959;
+        border: 15px solid #595959;
+    }
+    
+    #galerija>div[class="gridNaslov"] {
+        background-color: #595959;
+        border: 15px solid #595959;
+    }
+
+    .obrazacPoruka {
+        background-color: #eac659;
+        border: 16px solid #eac659;
+        box-shadow: 0px 0px 5px #A000FFA0;
+        color: black;
+    }
+
+    .obrazacPoruka:hover {
+        background-color: #f0d37b;
+        border: 16px solid #f0d37b;
+        box-shadow: 0px 0px 12px #A000FFFF;
+    }
+}
+
+/* Veliki zaslon nema posebno definirane selektore */

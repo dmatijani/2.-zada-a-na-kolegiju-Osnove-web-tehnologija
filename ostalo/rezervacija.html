@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="autor" content="David Matijanić">
+    <meta name="opis" content="Stranica koja služi za rezervaciju sobe">
+    <meta name="kljucneRijeci" content="soba, rezervacija, obrazac">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/dmatijani21.css">
+    <link rel="stylesheet" href="../css/dmatijani21_responzivni_dizajn.css">
+    <script type="text/javascript" src="../js/dmatijani21.js"></script>
+
+    <title>Rezervacija</title>
+</head>
+
+<body>
+    <header>
+        <img src="../dokumenti/slike/pocetnaBanner.jpg" alt="Banner slika" class="maxSirina" height="360">
+    
+        <h1>HOTEL ZLATNI OTOK</h1>
+
+        <a href="../index.html">
+            <img id="headerLogo" src="../dokumenti/slike/logo1.png" alt="Logo Hotela Zlatni Otok" width="256">
+        </a>
+    </header>
+
+    <nav>
+        <div id="izbornikMaliZaslon">Izbornik</div>
+
+        <ul>
+            <li><a href="../index.html">Početna</a></li>
+            <li><a class="active" href="rezervacija.html">Rezervacija</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="lokacija.html">Lokacija</a></li>
+            <li><a href="galerija.html">Galerija</a></li>
+            <li style="float:right"><a href="../dokumentacija/autor.html">Autor</a></li>
+            <li style="float:right"><a href="../dokumentacija/dokumentacija.html">Dokumentacija</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="rezervacija">
+            <h2>Rezervacija</h2>
+            <p>
+                Na sljedećoj stranici možete rezervirati sobu.
+            </p>
+
+            <div id="rezervacijaObrazac">
+                <form method="POST" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" novalidate>
+                    <div id="rezervacijaPoruka" class="obrazacPoruka">Ovo je prazna poruka.</div> <!--Poruka se generira u JavaScriptu -->
+
+                    <fieldset class="gridField1">
+                        <legend>Podaci o osobama</legend>
+
+                        <label for="rezervacijaObrazacImeNarucitelja">Naručitelj rezervacije:</label>
+                        <input type="text" id="rezervacijaObrazacImeNarucitelja" name="ime_narucitelja" maxlength="40" required>
+                        <br>
+
+                        <label for="rezervacijaObrazacEmailNarucitelja">Elektronička pošta naručitelja: </label>
+                        <input type="email" id="rezervacijaObrazacEmailNarucitelja" name="email_narucitelja">
+                        <br>
+
+                        <label for="rezervacijaObrazacBrojOsoba">Broj osoba:</label>
+                        <input type="number" id="rezervacijaObrazacBrojOsoba" name="broj_osoba" min="1" max="8" step="1" required>
+                        <br>
+
+                        <label for="rezervacijaObrazacImaLjubimaca">Kućni ljubimci? </label>
+                        <input type="checkbox" id="rezervacijaObrazacImaLjubimaca" name="ima_ljubimaca">
+                        <br>
+
+                        <label for="rezervacijaObrazacNacinPlacanja">Način plaćanja:</label>
+                        <select name="nacin_placanja" id="rezervacijaObrazacNacinPlacanja">
+                            <optgroup label="Gotovinska plaćanja">
+                                <option value="Euri" selected>Plaćanje eurima</option>
+                                <option value="Kune">Plaćanje kunama</option>
+                                <option value="Dolari">Plaćanje dolarima</option>
+                            </optgroup>
+                            <optgroup label="Kartična plaćanja">
+                                <option value="MasterCard">Plaćanje MasterCard karticom</option>
+                                <option value="Maestro">Plaćanje Maestro karticom</option>
+                                <option value="Visa">Plaćanje Visa karticom</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+
+                    <fieldset class="gridField2">
+                        <legend>Podaci o smještaju</legend>
+
+                        <label for="rezervacijaObrazacVrstaSobe1">Vrsta sobe: </label><br>
+                        <input type="radio" id="rezervacijaObrazacVrstaSobe1" name="vrsta_sobe" value="soba_s_pogledom_na_more" title="Općenito" required>Soba s pogledom na more<br>
+                        <input type="radio" id="rezervacijaObrazacVrstaSobe2" name="vrsta_sobe" value="soba_blizu_ulaza" title="Smještaj i osobe">Soba blizu ulaza<br>
+                        <input type="radio" id="rezervacijaObrazacVrstaSobe3" name="vrsta_sobe" value="soba_s_prostorijom_za_ljubimca" title="Posebne ponude">Soba s prostorijom za ljubimca<br>
+                        <br>
+
+                        <label for="rezervacijaObrazacDatum">Datum dolaska: </label>
+                        <input type="date" id="rezervacijaObrazacDatum" name="datum" required>
+                        <br>
+
+                        <label for="rezervacijaObrazacVrijemeDolaska">Vrijeme dolaska (07-18): </label>
+                        <input type="time" id="rezervacijaObrazacVrijemeDolaska" name="vrijeme_dolaska" value="10:00" min="07:00" max="18:00" required>
+                    </fieldset>
+
+                    <input type="submit" value="Pošalji podatke">
+                    <input type="reset" value="Očisti">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2023. David Matijanić
+        <br>
+
+        <a id="licenca" href="https://creativecommons.org/licenses/by/4.0/legalcode">
+            <img src="../dokumenti/slike/cc_by.png" alt="Licenca za imenovanje - CC-BY">
+        </a>
+
+        <a id="licenca2" href="http://validator.w3.org/check?uri=https://spider.foi.hr/OWT/2023/zadaca_02/dmatijani21/ostalo/rezervacija.html">
+            <img src="../dokumenti/slike/HTML5.png" alt="Znak HTML5 koji služi kao poveznica na Validator" width="80">
+        </a>
+    </footer>
+</body>
+
+</html>

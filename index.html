@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="autor" content="David Matijanić">
+    <meta name="opis" content="Početna stranica napravljena za Hotel Zlatni Otok">
+    <meta name="kljucneRijeci" content="hotel, rezervacije, cjenik">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/dmatijani21.css">
+    <link rel="stylesheet" href="css/dmatijani21_responzivni_dizajn.css">
+    <script type="text/javascript" src="js/dmatijani21.js"></script>
+
+    <title>Početna stranica</title>
+</head>
+
+<body>
+    <header>
+        <img src="dokumenti/slike/pocetnaBanner.jpg" alt="Banner slika" class="maxSirina" height="360">
+    
+        <h1>HOTEL ZLATNI OTOK</h1>
+
+        <a href="index.html">
+            <img id="headerLogo" src="dokumenti/slike/logo1.png" alt="Logo Hotela Zlatni Otok" width="256">
+        </a>
+    </header>
+
+    <nav>
+        <div id="izbornikMaliZaslon">Izbornik</div>
+
+        <ul>
+            <li><a class="active" href="index.html">Početna</a></li>
+            <li><a href="ostalo/rezervacija.html">Rezervacija</a></li>
+            <li><a href="ostalo/kontakt.html">Kontakt</a></li>
+            <li><a href="ostalo/lokacija.html">Lokacija</a></li>
+            <li><a href="ostalo/galerija.html">Galerija</a></li>
+            <li style="float:right"><a href="dokumentacija/autor.html">Autor</a></li>
+            <li style="float:right"><a href="dokumentacija/dokumentacija.html">Dokumentacija</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="oHotelu">
+            <h2>O hotelu</h2>
+
+            <p>Hotel Zlatni Otok jedan je od najljepših hotela s 4 zvjezdice.</p>
+            <p>Smješten u mirnom i prekrasnom okruženju, Hotel Zlatni Otok nudi vam potpuni užitak i opuštajući odmor. Uživajte u šetnjama prekrasnim plažama, istražujte otok i uživajte u svim njegovim ljepotama.</p>
+            <p>Hotel nudi brojne aktivnosti vezane uz zabavu i rekreaciju, poput ronjenja, vožnje biciklom, raznih sportskih aktivnosti i još toga.</p>
+            <p>Hotel Zlatni Otok nudi vam sve što vam je potrebno za savršen odmor na otoku Pagu, uključujući luksuzno uređene sobe i apartmane, besplatan Wi-Fi, uslugu čišćenja i još mnogo toga.</p>
+            <p>Rezervirajte vašu sobu ili apartman danas i uživajte u prekrasnoj prirodi, lokalnoj kulturi i vrhunskoj usluzi Hotela Zlatni Otok.</p>
+        </section>
+
+        <section id="akcijskePonude">
+            <div id="tekstUnutarPonuda">
+                <h2>Akcijske ponude</h2>
+                <p>
+                    Za vas smo pripremili vrhunske akcijske ponude kako bi Vaš užitak na godišnjem odmoru bio još bolji i ispunjeniji.
+                </p>
+            </div>
+
+            <div>
+                <h3>Noćenje za samo 30€</h3>
+                <a href="ostalo/ponuda1.html">
+                    <img src="dokumenti/slike/ponuda1Mala.jpg" alt="Slika ponude 1 - hotelska soba">
+                    <p>
+                        Nudimo vam noćenje za dvoje za samo 30€ po osobi, ukoliko ste bračni par ili zaručeni! Akcijska ponuda vrijedi do jeseni 2023.
+                    </p>
+                </a>
+            </div>
+
+            <div>
+                <h3>Četveročlana obitelj + ljubimac za samo 110€</h3>
+                <a href="ostalo/ponuda2.html">
+                    <img src="dokumenti/slike/ponuda2Mala.jpg" alt="Slika ponude 2 - četveročlana obitelj">
+                    <p>
+                        Akcijska ponuda uključuje noćenje za četveročlanu obitelj, uz ljubimca, sa zamo 110€! Ponuda vrijedi do kolovoza 2023.
+                    </p>
+                </a>
+            </div>
+
+            <div>
+                <h3>Besplatna dostava hrane u sobe</h3>
+                <a href="ostalo/ponuda3.html">
+                    <img src="dokumenti/slike/ponuda3Mala.jpg" alt="Slika ponude 3 - riba na tanjuru">
+                    <p>
+                        Ukoliko uzmete noćenje za jednu osobu, ili ste osoba s invaliditetom, imate mogućnost dostave hrane iz naše vrhunske kuhinje u vašu sobu! Ponuda vrijedi cijele godine.
+                    </p>
+                </a>
+            </div>
+        </section>
+
+        <section id="videoHotela">
+            <h2>Promo video</h2>
+            <p>
+                Videozapis prikazuje otok Pag i njegove karakteristike.
+            </p>
+
+            <video src="dokumenti/multimedija/hotel.mp4" controls></video>
+        </section>
+
+        <section id="cjenik"> 
+            <h2>Cjenik usluga</h2>
+            <p>
+                Ovdje možete vidjeti cijene naših usluga i smještaja.
+            </p>
+
+            <table id="tablicaCijena">
+                <caption>Cjenik usluga</caption>
+
+                <thead>
+                    <tr><th colspan="4">Cijene</th></tr>
+                    <tr>
+                        <th>Noćenje</th>
+                        <th>Cijena</th>
+                        <th>Cijena uz neograničene obroke</th>
+                        <th>Ponude</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Jedna osoba</td>
+                        <td>50,00 €</td>
+                        <td>55,00 €</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Dvije osobe</td>
+                        <td>70,00 €</td>
+                        <td>75,00 €</td>
+                        <td><a href="ostalo/ponuda1.html">Paket za bračni par</a></td>
+                    </tr>
+                    <tr>
+                        <td>Tri osobe</td>
+                        <td>90,00 €</td>
+                        <td>94,00 €</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Četiri osobe</td>
+                        <td rowspan="2">110,00 €</td>
+                        <td>113,00 €</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Četiri osobe + ljubimac</td>
+                        <td>114,00 €</td>
+                        <td><a href="ostalo/ponuda2.html">Više o ponudi</a></td>
+                    </tr>
+                    <tr>
+                        <td>Pet i više osoba</td>
+                        <td>130,00 €</td>
+                        <td>133,00 €</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023. David Matijanić
+        <br>
+
+        <a id="licenca" href="https://creativecommons.org/licenses/by/4.0/legalcode">
+            <img src="dokumenti/slike/cc_by.png" alt="Licenca za imenovanje - CC-BY">
+        </a>
+
+        <a id="licenca2" href="http://validator.w3.org/check?uri=https://spider.foi.hr/OWT/2023/zadaca_02/dmatijani21/index.html">
+            <img src="dokumenti/slike/HTML5.png" alt="Znak HTML5 koji služi kao poveznica na Validator" width="80">
+        </a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="autor" content="David Matijanić">
+    <meta name="opis" content="Stranica koja sadrži informacije u autoru ove web aplikacije">
+    <meta name="kljucneRijeci" content="autor, opis, profil">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/dmatijani21.css">
+    <link rel="stylesheet" href="../css/dmatijani21_responzivni_dizajn.css">
+    <script type="text/javascript" src="../js/dmatijani21.js"></script>
+
+    <title>Autor</title>
+</head>
+
+<body>
+    <header>
+        <img src="../dokumenti/slike/pocetnaBanner.jpg" alt="Banner slika" class="maxSirina" height="360">
+    
+        <h1>HOTEL ZLATNI OTOK</h1>
+
+        <a href="../index.html">
+            <img id="headerLogo" src="../dokumenti/slike/logo1.png" alt="Logo Hotela Zlatni Otok" width="256">
+        </a>
+    </header>
+
+    <nav>
+        <div id="izbornikMaliZaslon">Izbornik</div>
+
+        <ul>
+            <li><a href="../index.html">Početna</a></li>
+            <li><a href="../ostalo/rezervacija.html">Rezervacija</a></li>
+            <li><a href="../ostalo/kontakt.html">Kontakt</a></li>
+            <li><a href="../ostalo/lokacija.html">Lokacija</a></li>
+            <li><a href="../ostalo/galerija.html">Galerija</a></li>
+            <li style="float:right"><a class="active" href="autor.html">Autor</a></li>
+            <li style="float:right"><a href="dokumentacija.html">Dokumentacija</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="oAutoru">
+            <h2>O autoru</h2>
+
+            <figure>
+                <img id = "slikaDavida" src="../dokumenti/slike/davidMat.jpg" alt="Slika autora - David Matijanić">
+                <figcaption>David Matijanić</figcaption>
+            </figure>
+
+            <p>
+                David Matijanić student je 2. godine na Fakultetu organizacije i informatike. Trenutno pohađa smjer Informacijski i poslovni sustavi. 
+            </p>
+        </section>
+
+        <section id="dodatniPodaci">
+            <h2>Dodatni podaci</h2>
+
+            <ul>
+                <li>Ime i prezime: <span class="boldano">David Matijanić</span></li> <!--Podebljaj sa CSS!!!!!-->
+                <li>
+                    E-mail adresa:
+                    <a href="mailto:dmatijani21@foi.hr">dmatijani21@foi.hr</a>
+                </li>
+                <li>
+                    Omiljeni predmeti: 
+                    <ol>
+                        <li>Baze podataka 1</li>
+                        <li>Informacijski i računalni sustavi</li>
+                        <li>Programiranje 1</li>
+                        <li>Programiranje 2</li>
+                        <li>Operacijski sustavi</li>
+                    </ol>
+                </li>
+                <li>Željeni smjer studija: <span class="ukoseno">Razvoj programskih sustava</span></li>
+                <li>
+                    Razlog zašto taj smjer:
+                    <blockquote>
+                        Želio bih upisati smjer Razvoj programskih sustava zbog vlastitog odličnog znanja programiranja i zbog toga što su mi dobro išli programerski predmeti.
+                        Također, imam iskustvo u dizajniranju, razvoju i programiranju video igara što također pridonosi mom vlastitom znanju i ovog područja.
+                        Posjedujem znanje modeliranja i dizajniranja programskih rješenja, no najveći razlog zašto želim upisati ovaj smjer je visoka želja za napredovanjem u ovom području.
+                        <cite>-David Matijanić</cite>
+                    </blockquote>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023. David Matijanić
+        <br>
+
+        <a id="licenca" href="https://creativecommons.org/licenses/by/4.0/legalcode">
+            <img src="../dokumenti/slike/cc_by.png" alt="Licenca za imenovanje - CC-BY">
+        </a>
+        
+        <a id="licenca2" href="http://validator.w3.org/check?uri=https://spider.foi.hr/OWT/2023/zadaca_02/dmatijani21/dokumentacija/autor.html">
+            <img src="../dokumenti/slike/HTML5.png" alt="Znak HTML5 koji služi kao poveznica na Validator" width="80">
+        </a>
+    </footer>
+</body>
+
+</html>
