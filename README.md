@@ -1,5 +1,9 @@
 # 2. zadaća iz kolegija Osnove web tehnologija
 
+Stranica je dostupna na: https://dmatijani.github.io/OWT-zadaca_02/
+
+## Općenito
+
 Web stranica je napravljena u sklopu kolegija Osnove web tehnologija, _travanj 2023._
 
 Fokus je bio na sljedećem:
