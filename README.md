@@ -16,7 +16,7 @@ Fokus _nije_ bio na sljedećem:
 - _backend_ kod
 - korištenje okvira za dizajn
 
-**2. zadaća iz kolegija RWA imala je fokus na te stvari:** https://github.com/dmatijani/RWA-zadaca_02
+**2. zadaća iz kolegija RWA (prosinac 2023.) imala je fokus na te stvari:** https://github.com/dmatijani/RWA-zadaca_02
 
 ## Slike zaslona
 
